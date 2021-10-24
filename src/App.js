@@ -26,14 +26,15 @@ function App() {
               <br />
             </body>
           </div>
-          <div className="selectclass"> 
+          <div Style=""className="selectclass"> 
             <h2>Please select your class:</h2>
             <SelectClass />
           </div>
-          <div>
+          <div className="selectprofessor">
             <SelectProfessor />
           </div>
           <div className="Email"> 
+            <h4 Style="margin-botton: 2.5%"> Fill out your email/name and submit! </h4>
             <Email />
           </div>
         </div>

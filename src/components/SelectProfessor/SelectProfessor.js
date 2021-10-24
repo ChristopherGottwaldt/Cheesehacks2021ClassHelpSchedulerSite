@@ -15,7 +15,7 @@ class SelectProfessor extends Component {
                     <button type="button" class="list-group-item list-group-item-action">Mouna Kacem</button>
                     <button type="button" class="list-group-item list-group-item-action">Hobbes Legault</button>
 			    </div>
-                <h4>Select a TA</h4>
+                <h4 Style="margin-top: 1.5%">Select a TA</h4>
                 <div class="dropdown">
                     <Dropdown
                     buttonText="Choose  "
