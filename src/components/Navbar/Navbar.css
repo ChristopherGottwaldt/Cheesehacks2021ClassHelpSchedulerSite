@@ -5,7 +5,7 @@
   font-style: arial;
 }
 .NavbarItems {
-  background: #3333cf;
+  background: #c5050c;
   height: 100px;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
   display: flex;
 }
 .navbar-logo {
-  color: #fd98ba;
+  color: white;
   justify-self: start;
   margin-left: 20px;
   font-size: 35px;
