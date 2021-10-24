@@ -1,0 +1,13 @@
+input,
+select,
+textarea {
+  color: hsl(0, 0%, 0%);
+  margin-right: 1%;
+  border-radius: 6px;
+  border: 2px solid black;
+}
+.button {
+  background-color: #c5050c;
+  color: white;
+  font-weight: bold;
+}

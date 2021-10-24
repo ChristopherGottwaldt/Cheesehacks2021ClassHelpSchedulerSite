@@ -1,5 +1,21 @@
 .App {
   text-align: center;
+  background: #c5050c;
+}
+img {
+  width: 6.4%;
+  position: absolute;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 32.5px;
 }
 
 .App-logo {
@@ -26,6 +42,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.questions {
+  border: 2px solid #c5050c;
+  background-color: #9b0000;
+  margin: 0 auto;
+  border-radius: 25px;
+  width: 65%;
 }
 
 @keyframes App-logo-spin {
