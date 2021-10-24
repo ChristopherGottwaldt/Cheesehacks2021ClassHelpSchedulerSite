@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-style: sans-serif;
+    font-size: 15px;
+  }
+
+  .list-group {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dropdown {
+    transform: translateX(320px); 
+  }
