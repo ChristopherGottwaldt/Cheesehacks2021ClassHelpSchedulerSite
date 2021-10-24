@@ -1,13 +1,12 @@
 import './App.css';
-import React from "react"
+import React from "react";
 import Navbar from './components/Navbar/Navbar';
-import SelectClass from './components/SelectClass/SelectClass';
 import { BrowserRouter as Router, Route, Switch, withRouter} from "react-router-dom";
 import logo from './logo.png'; // Tell webpack this JS file uses this image
 import Email from './components/Email/Email';
-
+import SelectClass from './components/SelectClass/SelectClass';
+import SelectProfessor from './components/SelectProfessor/SelectProfessor';
 function App() {
-  document.body.style = 'background: #ffffff;';
   return (
     <Router>
       <div className="App">
@@ -20,10 +19,19 @@ function App() {
             <h1>Scheduling Assistant</h1>
           </div>
           <div className="instructions">
-            <body>
-              <p1>Note: All appointments will be conducted via Google Meet.</p1>  
-              <p1>Use this site to schedule an appointment to receive help on Computer Science courses here at UW-Madison. </p1>
+            <body Style="background-color: #9b0000; margin-top: 1.5%; margin-bottom: 1.5%">
+              <p2>Note: All appointments will be conducted via Google Meet.</p2>  
+              <p2> Use this site to schedule an appointment to receive help on Computer Science courses here at UW-Madison.</p2>
+              <p2> Please arrive 5 minutes earlier to the appointment and have your question ready beforehand!</p2>
+              <br />
             </body>
+          </div>
+          <div className="selectclass"> 
+            <h2>Please select your class:</h2>
+            <SelectClass />
+          </div>
+          <div>
+            <SelectProfessor />
           </div>
           <div className="Email"> 
             <Email />
@@ -32,15 +40,6 @@ function App() {
       </div>
     </Router>
   );
-  // return (
-  //   <Router>
-  //     <div className="App">
-  //       <Navbar />
-  //       <div className="greeting">
-  //       </div>  
-  //     </div>
-  //   </Router>
-  // );
 }
 
 export default App; 

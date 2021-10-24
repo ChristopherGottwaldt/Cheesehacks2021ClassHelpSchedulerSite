@@ -16,7 +16,6 @@ const Button = styled.button`
 
   &:disabled {
     color: grey;
-    opacity: 0.4;
     cursor: default;
   }
 `;
@@ -24,11 +23,11 @@ const Button = styled.button`
 const ButtonToggle = styled(Button)`
 margin-left: 1%;  
 margin-right: 1%;
-  opacity: 0.6;
+  opacity: 0.8;
   ${({ active }) =>
     active &&
     `
-    opacity: 1;
+    background-color: #FF000C
   `}
 `;
 
