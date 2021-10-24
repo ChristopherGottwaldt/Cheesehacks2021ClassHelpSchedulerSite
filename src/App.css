@@ -30,14 +30,14 @@ h1 {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #9b0000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #9b0000;
 }
 
 .App-link {
@@ -59,4 +59,8 @@ h1 {
   to {
     transform: rotate(360deg);
   }
+}
+
+h1, h3{
+  color: #282c34;
 }
