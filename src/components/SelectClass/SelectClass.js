@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { Component } from "react";
 import { CSClassNames } from "./CSClassNames";
 import { CSClassNames2 } from "./CSClassNames";
 import styled from "styled-components";
@@ -37,45 +37,48 @@ const ButtonGroup = styled.div`
   justify-content: center;
 `
 
-function ToggleGroup1() {
-    const [active, setActive] = useState("");
-    return (
-        <div>
-            <ButtonGroup>
-                {CSClassNames.map(type => (
-                <ButtonToggle
-                    key={type}
-                    active={active === type}
-                    onClick={() => setActive(type)}
-                >
-                    {type}
-                </ButtonToggle>
-                ))}
-            </ButtonGroup>
-            <ButtonGroup>
-                {CSClassNames2.map(type => (
-                <ButtonToggle
-                    key={type}
-                    active={active === type}
-                    onClick={() => setActive(type)}
-                >
-                    {type}
-                </ButtonToggle>
-                ))}
-            </ButtonGroup>
-        </div>
-    );
-  }
-
 class SelectClass extends Component {
+    
+    static selectedClassName;
 
+    constructor(props) {
+        super(props);
+        this.state = {
+          className: CSClassNames[0],
+        };
+        SelectClass.selectedClassName = CSClassNames[0]
+    }
+    
     render() {
-        return(
-            <div>
-                <ToggleGroup1/>
-            </div>
-        );
+
+        var ret_val =             
+        <div>
+        <ButtonGroup>
+            {CSClassNames.map(type => (
+            <ButtonToggle
+                key={type}
+                active={this.state.className === type}
+                onClick={() => this.setState({ className: type })}>
+                {type}
+            </ButtonToggle>
+            ))}
+        </ButtonGroup>
+        <ButtonGroup>
+            {CSClassNames2.map(type => (
+              <ButtonToggle
+                key={type}
+                active={this.state.className === type}
+                onClick={() => this.setState({ className: type })}
+            >
+                {type}
+            </ButtonToggle>
+            ))}
+        </ButtonGroup>
+    </div>;
+
+        SelectClass.currentlySelectedClass = this.state.className;
+        
+        return (ret_val);
     }
 }
-
 export default SelectClass;
