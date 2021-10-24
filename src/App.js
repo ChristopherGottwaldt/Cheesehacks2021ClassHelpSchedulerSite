@@ -20,9 +20,9 @@ function App() {
           </div>
           <div className="instructions">
             <body Style="background-color: #9b0000; margin-top: 1.5%; margin-bottom: 1.5%">
-              <p2>Note: All appointments will be conducted via Google Meet.</p2>  
+              <p2>Note: All appointments will be conducted via Zoom.</p2>  
               <p2> Use this site to schedule an appointment to receive help on Computer Science courses here at UW-Madison.</p2>
-              <p2> Please arrive 5 minutes earlier to the appointment and have your question ready beforehand!</p2>
+              <p2> Please arrive 5 minutes earlier to the appointment and have your questions ready beforehand!</p2>
               <br />
             </body>
           </div>
